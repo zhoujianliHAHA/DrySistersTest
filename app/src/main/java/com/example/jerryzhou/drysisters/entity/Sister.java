@@ -1,4 +1,4 @@
-package com.example.jerryzhou.drysisters;
+package com.example.jerryzhou.drysisters.entity;
 
 /**
  * @author admin
@@ -8,7 +8,7 @@ package com.example.jerryzhou.drysisters;
  * desc ：
  */
 public class Sister {
-    private String id;
+    private String _id;
     private String createAt;
     private String desc;
     private String publishedAt;
@@ -23,7 +23,7 @@ public class Sister {
     }
 
     public Sister(String id, String createAt, String desc, String publishedAt, String source, String type, String url, boolean used, String who) {
-        this.id = id;
+        this._id = id;
         this.createAt = createAt;
         this.desc = desc;
         this.publishedAt = publishedAt;
@@ -35,11 +35,11 @@ public class Sister {
     }
 
     public String getId() {
-        return id;
+        return _id;
     }
 
     public void setId(String id) {
-        this.id = id;
+        this._id = id;
     }
 
     public String getCreateAt() {

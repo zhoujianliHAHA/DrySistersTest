@@ -1,4 +1,4 @@
-package com.example.jerryzhou.drysisters;
+package com.example.jerryzhou.drysisters.imgloader;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -56,7 +56,7 @@ public class PictureLoader {
                 HttpURLConnection connection =
                         (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
-                connection.setReadTimeout(10000);
+                connection.setReadTimeout(5000);
                 int responseCode = 200;
                 if(connection.getResponseCode() == responseCode){
                     InputStream inputStream = connection.getInputStream();
